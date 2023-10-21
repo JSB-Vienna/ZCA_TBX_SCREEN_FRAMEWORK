@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CA_SCR_FW_COMPOSITE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>CA-TBX: Screen / dynpro framework - Composite screen</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add view to screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>COLLECT_EXCL_FUNCS_FOR_VAL_CHK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Collect func codes of involved views to suppress value check</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CURRENT_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get current view</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_NEXT_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get next view</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VIEW_BY_INDEX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get view by index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MRA_EXCL_FUNC_FOR_VALUE_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function code list where no value check should be executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_VIEWS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>(Sub-) Screen informations (MUST be changeable!!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_SUBVIEWS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number of subscreens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_SUBVIEW_INDEX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Index of last subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>NO_VALUE_CHECK_IS_REQUIRED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Avoid value check for specific function codes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ON_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle function code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REMOVE_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Remove view from screen</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_VIEW</CMPNAME>
+     <SCONAME>IO_VIEW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_VIEW</CMPNAME>
+     <SCONAME>IV_INDEX</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Index of screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IO_SCREEN_CTLR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro fw - (Sub-)Screen controller</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_DYNNR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number of (sub-)screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_SCREEN_NAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of (sub-)screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CURRENT_VIEW</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_NEXT_VIEW</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VIEW_BY_INDEX</CMPNAME>
+     <SCONAME>IV_INDEX</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Index of screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VIEW_BY_INDEX</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NO_VALUE_CHECK_IS_REQUIRED</CMPNAME>
+     <SCONAME>RV_NO_VALUE_CHECK</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>X = No value check required</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REMOVE_VIEW</CMPNAME>
+     <SCONAME>IO_VIEW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

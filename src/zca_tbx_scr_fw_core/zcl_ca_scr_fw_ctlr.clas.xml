@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CA_SCR_FW_CTLR</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>CA-TBX: Screen / dynpro framework - FW controller</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DYNPRO_GET_CURSOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get current cursor position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DYNPRO_GET_SUBSCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get next subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DYNPRO_HANDLE_EVENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle events of current screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get singleton instance of screen framework controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get next screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get next active view</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VIEW_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine view type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_FW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - FW controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_OPTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constants and value checks for screen /dynpro framework</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MS_CURSOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instance of current view and cursor information</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_EXCL_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Excluded function codes of current status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_VIEWS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>All (sub-)screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_VIEWS_ON_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Currently used (sub-)screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_DYNNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current screen number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current (at PAI) / last (at PBO) function code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_OKCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Actual function code (used in screens therefore changable)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_PFSTATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current GUI status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_PFSTATUS_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current GUI status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_POV_FIELD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen field name where evt for value-request was triggered</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current screen number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 1 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 2 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR3</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 3 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR4</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 4 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR5</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 5 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REGISTER_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Register view for current screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_CURSOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set cursor for (sub-)screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_EXCL_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set excluded function codes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set function code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_PFSTATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set GUI status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UNREGISTER_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unregister view from current screen</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>DYNPRO_GET_CURSOR</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DYNPRO_GET_SUBSCREEN</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DYNPRO_HANDLE_EVENT</CMPNAME>
+     <SCONAME>IV_EVENT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen event</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DYNPRO_HANDLE_EVENT</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>RO_FW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - FW controller</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SCREEN</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SCREEN</CMPNAME>
+     <SCONAME>RO_VIEW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <SCONAME>IV_DYNNR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number of (sub-)screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <SCONAME>RO_VIEW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VIEW_TYPE</CMPNAME>
+     <SCONAME>IO_VIEW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VIEW_TYPE</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>View type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REGISTER_VIEW</CMPNAME>
+     <SCONAME>IO_VIEW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_CURSOR</CMPNAME>
+     <SCONAME>IO_VIEW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CA-TBX: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_CURSOR</CMPNAME>
+     <SCONAME>IS_CURSOR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Detailed cursor information, mostly for the value-request</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_EXCL_FCODE</CMPNAME>
+     <SCONAME>IT_FCODES</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Excluded function codes</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_FCODE</CMPNAME>
+     <SCONAME>IV_FCODE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_PFSTATUS</CMPNAME>
+     <SCONAME>IV_PFSTATUS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of GUI status</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_PFSTATUS</CMPNAME>
+     <SCONAME>IV_PFSTATUS_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to GUI status</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR1</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 1 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 2 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR3</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 3 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR4</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 4 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR5</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 5 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UNREGISTER_VIEW</CMPNAME>
+     <SCONAME>IO_VIEW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

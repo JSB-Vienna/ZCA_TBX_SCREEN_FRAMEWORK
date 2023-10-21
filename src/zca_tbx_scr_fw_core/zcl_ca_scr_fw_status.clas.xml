@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CA_SCR_FW_STATUS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>CA-TBX: Screen / dynpro fw - GUI Status</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_EXCL_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Description</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_PFSTATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current GUI status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_PFSTATUS_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current GUI status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 1 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 2 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR3</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 3 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR4</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 4 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_TITLEBAR_VAR5</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 5 for current title bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RESET_EXCL_FCODES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reset / initialize excluded function codes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_EXCL_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set excluded function codes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_PFSTATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set GUI status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set title bar</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_EXCL_FCODE</CMPNAME>
+     <SCONAME>IT_FCODES</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Excluded function codes</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_PFSTATUS</CMPNAME>
+     <SCONAME>IV_PFSTATUS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of GUI status</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_PFSTATUS</CMPNAME>
+     <SCONAME>IV_PFSTATUS_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to GUI status</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_REPID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR1</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 1 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 2 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR3</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 3 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR4</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 4 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_TITLEBAR</CMPNAME>
+     <SCONAME>IV_TITLEBAR_VAR5</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable 5 for title bar</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

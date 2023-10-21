@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CA_SCR_FW_WINDOW_CTLR</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>CA-TBX: Screen / dynpro fw - Window controller</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CLOSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Close screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CLOSED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen were closed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create GUI status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_DEF_DYNNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Default screen number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_DEF_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Default program name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_DEF_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Default program name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PFSTATUS_POPUP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Default GUI status for popup</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PFSTATUS_SCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Default GUI status for windows</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FCODE_TRIGGERED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle function code - use to inform involved objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get status instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HANDLE_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_GOS_MANAGER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Publication for Generic Object Services (Manager)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_GUI_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro fw - GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_WINDOW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - Window / Dynpro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MS_POPUP_CORNERS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Definition of the popup corner points</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_DIALOG_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of dialog (main screen incl. composites and subscreens)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current screen mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_OPEN_AS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>X = Open screen as popup</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ON_CALL_SCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Call simply the screen - nothing else</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ON_SET_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GUI status was set - do depending adjustments here</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_SCREEN_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set GUI status</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IS_POPUP_CORNERS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Definition of the popup corner points</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_DIALOG_NAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dialog name (e. g. helpful for screen control)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_MODE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen mode (use ZCL_CA_C_SCR_FW=&gt;MODE-*)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_OPEN_AS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Open as screen or popup -&gt; use ZCL_CA_C_SCR_FW=&gt;OPEN_AS-*</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FCODE_TRIGGERED</CMPNAME>
+     <SCONAME>IV_FCODE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STATUS</CMPNAME>
+     <SCONAME>RO_GUI_STATUS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen / dynpro fw - GUI Status</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HANDLE_STATUS</CMPNAME>
+     <SCONAME>IO_GUI_STATUS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen / dynpro fw - GUI Status</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

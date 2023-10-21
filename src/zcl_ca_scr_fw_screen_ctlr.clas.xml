@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CA_SCR_FW_SCREEN_CTLR</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>CA-TBX: Screen / dynpro fw - (Sub-)Screen controller</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADJUST_SCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adjust screen fields for display or modification</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_VALUES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Validate captured data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_SCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create screen instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_FRAME_LABEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Frame label in subscrs. with dynpro no -&gt; see FG fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXCHANGE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exchange data between screen program and controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXCLUDE_FCODE_FOR_VALUE_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Register function code to be excluded from value check</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_EXCL_FUNCS_FOR_VAL_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get excluded function codes of the view</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HANDLE_PAI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle Process After Input - but no FCODE handling!</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HANDLE_PBO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle Process Before Output - but set no GUI status!</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HANDLE_POV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle value requests</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_FCODES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function code constants (with suggested icons)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_SCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common object: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_SCR_FLD_ATTR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen field attributes (usage with table SCREEN)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_SCR_OPTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constants and value checks for screen/dynpro framework</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MRA_EXCL_FUNC_FOR_VALUE_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function code list where no value check should be executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_DYNNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Is screen controller to this screen number ...</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_FRAME_LABEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Frame label</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>... and this program id</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_SCREEN_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>(Sub-)Screen name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>NO_VALUE_CHECK_IS_REQUIRED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Avoid value check for specific function codes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ON_CLOSED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Release fields and instances for garbage collection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ON_PROCESS_EVENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process screen event</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ON_PROCESS_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle function code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REFRESH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Trigger function code REFRESH</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_FCODE_HANDLED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initialize function code to space - execution is complete</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_FRAME_LABEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Use at PBO: Set frame label if passed via constructor</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_FRAME_LABEL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Frame label</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCHANGE_DATA</CMPNAME>
+     <SCONAME>CV_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Incoming or outgoing data depending on the event</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCHANGE_DATA</CMPNAME>
+     <SCONAME>EO_OBJECT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Incoming object reference depending on the event</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCHANGE_DATA</CMPNAME>
+     <SCONAME>ER_DATA_REF</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Incoming data reference depending on the event</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCHANGE_DATA</CMPNAME>
+     <SCONAME>IO_OBJECT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Outgoing object reference depending on the event</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCHANGE_DATA</CMPNAME>
+     <SCONAME>IR_DATA_REF</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Outgoing data reference depending on the event</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCHANGE_DATA</CMPNAME>
+     <SCONAME>IV_EVENT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen event - only PBO or PAI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCHANGE_DATA</CMPNAME>
+     <SCONAME>IV_FNAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field / structure name defined in TOP include</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCLUDE_FCODE_FOR_VALUE_CHECK</CMPNAME>
+     <SCONAME>IV_FCODE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function code to be excluded (generic vals possible with *+)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_EXCL_FUNCS_FOR_VAL_CHECK</CMPNAME>
+     <SCONAME>RRA_EXCL_FUNCTIONS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exclude functions of the view</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HANDLE_PAI</CMPNAME>
+     <SCONAME>IV_EVENT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen event PAI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HANDLE_PAI</CMPNAME>
+     <SCONAME>ZCX_CA_PARAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common exception: Parameter error (INHERIT from this excep!)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HANDLE_PBO</CMPNAME>
+     <SCONAME>IV_EVENT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen event PBO</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HANDLE_PBO</CMPNAME>
+     <SCONAME>ZCX_CA_PARAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common exception: Parameter error (INHERIT from this excep!)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HANDLE_POV</CMPNAME>
+     <SCONAME>IV_EVENT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen event PBO</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HANDLE_POV</CMPNAME>
+     <SCONAME>ZCX_CA_PARAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Common exception: Parameter error (INHERIT from this excep!)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NO_VALUE_CHECK_IS_REQUIRED</CMPNAME>
+     <SCONAME>RV_NO_VALUE_CHECK</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>X = No value check required</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
