@@ -123,6 +123,11 @@
      <DESCRIPT>GUI status was set - do depending adjustments here</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
+     <CMPNAME>PROCESS_FCODE_2_LEAVE_DIALOG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process function code to leave dialog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
      <CMPNAME>SET_SCREEN_STATUS</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Set GUI status</DESCRIPT>
@@ -170,6 +175,12 @@
      <SCONAME>IO_GUI_STATUS</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Screen / dynpro fw - GUI Status</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PROCESS_FCODE_2_LEAVE_DIALOG</CMPNAME>
+     <SCONAME>IV_FCODE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function code</DESCRIPT>
     </SEOSUBCOTX>
    </DESCRIPTIONS_SUB>
   </asx:values>

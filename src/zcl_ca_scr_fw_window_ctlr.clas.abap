@@ -106,6 +106,16 @@ CLASS zcl_ca_scr_fw_window_ctlr DEFINITION PUBLIC
         IMPORTING
           io_gui_status,
 
+      "! <p class="shorttext synchronized" lang="en">Process function code to leave dialog</p>
+      "!
+      "! <p>This method raise an event to pass the actual function code anywhere outside the dialog for
+      "! e.g. a late handling by the dialog consumer.</p>
+      "!
+      "! @parameter iv_fcode | <p class="shorttext synchronized" lang="en">Function code</p>
+      process_fcode_2_leave_dialog
+        IMPORTING
+          iv_fcode TYPE syst_ucomm,
+
       "! <p class="shorttext synchronized" lang="en">Set GUI status</p>
       set_screen_status,
 
@@ -372,6 +382,14 @@ CLASS zcl_ca_scr_fw_window_ctlr IMPLEMENTATION.
     "-----------------------------------------------------------------*
     "   Handle function code
     "-----------------------------------------------------------------*
+    process_fcode_2_leave_dialog( iv_fcode ).
+  ENDMETHOD.                    "on_process_fcode
+
+
+  METHOD process_fcode_2_leave_dialog.
+    "-----------------------------------------------------------------*
+    "   Process function code to leave dialog (BACK, EXIT, ENTER + CANCEL)
+    "-----------------------------------------------------------------*
     IF   mo_gui_status->mv_pfstatus_repid EQ c_def_repid        AND
        ( mo_gui_status->mv_pfstatus       EQ c_pfstatus_screen   OR
          mo_gui_status->mv_pfstatus       EQ c_pfstatus_popup ).
@@ -390,7 +408,7 @@ CLASS zcl_ca_scr_fw_window_ctlr IMPLEMENTATION.
       RAISE EVENT fcode_triggered
         EXPORTING iv_fcode = iv_fcode.
     ENDIF.
-  ENDMETHOD.                    "on_process_fcode
+  ENDMETHOD.                    "process_fcode_2_leave_dialog
 
 
   METHOD on_set_status.
