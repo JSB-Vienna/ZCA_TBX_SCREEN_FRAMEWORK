@@ -235,6 +235,18 @@ CLASS zcl_ca_scr_fw_screen_ctlr IMPLEMENTATION.
 *  ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
 *  REDEFINE this method to check the values and call it in HANDLE_PAI
 *  ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+
+*    TRY.
+*        IF mo_screen->mv_mode EQ mo_scr_options->mode-display.
+*          RETURN.
+*        ENDIF.
+*
+*        "Copy this part for your redefinition
+*
+*      CATCH zcx_ca_error INTO DATA(lx_catched).
+*        set_fcode_handled( ).
+*        MESSAGE lx_catched TYPE lx_catched->mv_msgty.
+*    ENDTRY.
   ENDMETHOD.                    "check_values
 
 
