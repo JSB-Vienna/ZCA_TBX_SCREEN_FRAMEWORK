@@ -61,7 +61,7 @@ CLASS zcl_ca_scr_fw_screen_ctlr DEFINITION PUBLIC
 *   i n s t a n c e   a t t r i b u t e s
     DATA:
 *     o b j e c t   r e f e r e n c e s
-      "! <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! <p class="shorttext synchronized" lang="en">CA-TBX:  Screen / dynpro framework - (Sub-)Screen</p>
       mo_screen                     TYPE REF TO zcl_ca_scr_fw_screen,
       "! <p class="shorttext synchronized" lang="en">Screen field attributes (usage with table SCREEN)</p>
       mo_scr_fld_attr               TYPE REF TO zcl_ca_c_screen_field_attr,
@@ -135,7 +135,7 @@ CLASS zcl_ca_scr_fw_screen_ctlr DEFINITION PUBLIC
       "! <p class="shorttext synchronized" lang="en">Handle Process After Input - but no FCODE handling!</p>
       "!
       "! @parameter iv_event     | <p class="shorttext synchronized" lang="en">Screen event PAI</p>
-      "! @raising   zcx_ca_param | <p class="shorttext synchronized" lang="en">Common exception: Parameter error (INHERIT from this excep!)</p>
+      "! @raising   zcx_ca_param | <p class="shorttext synchronized" lang="en">CA-TBX exception: Parameter error (INHERIT from this excep!)</p>
       handle_pai
         IMPORTING
           iv_event TYPE syst_ucomm
@@ -145,7 +145,7 @@ CLASS zcl_ca_scr_fw_screen_ctlr DEFINITION PUBLIC
       "! <p class="shorttext synchronized" lang="en">Handle Process Before Output - but set no GUI status!</p>
       "!
       "! @parameter iv_event     | <p class="shorttext synchronized" lang="en">Screen event PBO</p>
-      "! @raising   zcx_ca_param | <p class="shorttext synchronized" lang="en">Common exception: Parameter error (INHERIT from this excep!)</p>
+      "! @raising   zcx_ca_param | <p class="shorttext synchronized" lang="en">CA-TBX exception: Parameter error (INHERIT from this excep!)</p>
       handle_pbo
         IMPORTING
           iv_event TYPE syst_ucomm
@@ -155,7 +155,7 @@ CLASS zcl_ca_scr_fw_screen_ctlr DEFINITION PUBLIC
       "! <p class="shorttext synchronized" lang="en">Handle value requests</p>
       "!
       "! @parameter iv_event     | <p class="shorttext synchronized" lang="en">Screen event PBO</p>
-      "! @raising   zcx_ca_param | <p class="shorttext synchronized" lang="en">Common exception: Parameter error (INHERIT from this excep!)</p>
+      "! @raising   zcx_ca_param | <p class="shorttext synchronized" lang="en">CA-TBX exception: Parameter error (INHERIT from this excep!)</p>
       handle_pov
         IMPORTING
           iv_event TYPE syst_ucomm

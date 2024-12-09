@@ -4,7 +4,7 @@
   <asx:values>
    <VSEOCLASS>
     <CLSNAME>ZCL_CA_SCR_FW_WINDOW_CTLR</CLSNAME>
-    <LANGU>E</LANGU>
+    <LANGU>D</LANGU>
     <DESCRIPT>CA-TBX: Screen / dynpro fw - Window controller</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
@@ -12,11 +12,27 @@
     <UNICODE>X</UNICODE>
     <RSTAT>S</RSTAT>
    </VSEOCLASS>
+   <DESCRIPTIONS_CLASS>
+    <SEOCLASSTX>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CA-TBX: Screen / dynpro fw - Window controller</DESCRIPT>
+    </SEOCLASSTX>
+   </DESCRIPTIONS_CLASS>
    <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CLOSE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Close screens</DESCRIPT>
+    </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>CLOSE</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Close screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CLOSED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen were closed</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>CLOSED</CMPNAME>
@@ -25,8 +41,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Create GUI status</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>CREATE_STATUS</CMPNAME>
@@ -35,12 +61,27 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>C_DEF_DYNNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Default screen number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_DEF_DYNNR</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Default screen number</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>C_DEF_REPID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Default program name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_DEF_REPID</CMPNAME>
      <LANGU>E</LANGU>
+     <DESCRIPT>Default program name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_DEF_TITLEBAR</CMPNAME>
+     <LANGU>D</LANGU>
      <DESCRIPT>Default program name</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
@@ -50,8 +91,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>C_PFSTATUS_POPUP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Default GUI status for popup</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PFSTATUS_POPUP</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Default GUI status for popup</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PFSTATUS_SCREEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Default GUI status for windows</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>C_PFSTATUS_SCREEN</CMPNAME>
@@ -60,8 +111,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>DISPLAY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Display screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DISPLAY</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Display screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FCODE_TRIGGERED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Handle function code - use to inform involved objects</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>FCODE_TRIGGERED</CMPNAME>
@@ -70,8 +131,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>GET_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Get status instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_STATUS</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Get status instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HANDLE_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Handle status</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>HANDLE_STATUS</CMPNAME>
@@ -80,18 +151,38 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MO_GOS_MANAGER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Publication for Generic Object Services (Manager)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_GOS_MANAGER</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Publication for Generic Object Services (Manager)</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MO_GUI_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CA-TBX: Screen / dynpro fw - GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_GUI_STATUS</CMPNAME>
      <LANGU>E</LANGU>
-     <DESCRIPT>Common object: Screen / dynpro fw - GUI Status</DESCRIPT>
+     <DESCRIPT>CA-TBX: Screen / dynpro fw - GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_WINDOW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CA-TBX: Screen / dynpro framework - Window / Dynpro</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MO_WINDOW</CMPNAME>
      <LANGU>E</LANGU>
-     <DESCRIPT>Common object: Screen / dynpro framework - Window / Dynpro</DESCRIPT>
+     <DESCRIPT>CA-TBX: Screen / dynpro framework - Window / Dynpro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MS_POPUP_CORNERS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Definition of the popup corner points</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MS_POPUP_CORNERS</CMPNAME>
@@ -100,8 +191,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_DIALOG_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name of dialog (main screen incl. composites and subscreens)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_DIALOG_NAME</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Name of dialog (main screen incl. composites and subscreens)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Current screen mode</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_MODE</CMPNAME>
@@ -110,8 +211,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_OPEN_AS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>X = Open screen as popup</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_OPEN_AS</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>X = Open screen as popup</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ON_CALL_SCREEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Call simply the screen - nothing else</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>ON_CALL_SCREEN</CMPNAME>
@@ -120,13 +231,38 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>ON_SET_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>GUI status was set - do depending adjustments here</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ON_SET_STATUS</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>GUI status was set - do depending adjustments here</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>PROCESS_FCODE_2_LEAVE_DIALOG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Process function code to leave dialog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PROCESS_FCODE_2_LEAVE_DIALOG</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Process function code to leave dialog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_FIRST_PBO_COMPLETED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set flag IS_FIRST_PBO in all view to FALSE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_FIRST_PBO_COMPLETED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set flag IS_FIRST_PBO in all view to FALSE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_SCREEN_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set GUI status</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_SCREEN_STATUS</CMPNAME>
@@ -138,8 +274,20 @@
     <SEOSUBCOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
      <SCONAME>IS_POPUP_CORNERS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Definition of the popup corner points</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IS_POPUP_CORNERS</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Definition of the popup corner points</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_DIALOG_NAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dialog name (e. g. helpful for screen control)</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
@@ -150,8 +298,20 @@
     <SEOSUBCOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
      <SCONAME>IV_MODE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen mode (use ZCL_CA_C_SCR_FW=&gt;MODE-*)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_MODE</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Screen mode (use ZCL_CA_C_SCR_FW=&gt;MODE-*)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_OPEN_AS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Open as screen or popup -&gt; use ZCL_CA_C_SCR_FW=&gt;OPEN_AS-*</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
@@ -162,8 +322,20 @@
     <SEOSUBCOTX>
      <CMPNAME>FCODE_TRIGGERED</CMPNAME>
      <SCONAME>IV_FCODE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Function code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FCODE_TRIGGERED</CMPNAME>
+     <SCONAME>IV_FCODE</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Function code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STATUS</CMPNAME>
+     <SCONAME>RO_GUI_STATUS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen / dynpro fw - GUI Status</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>GET_STATUS</CMPNAME>
@@ -174,8 +346,20 @@
     <SEOSUBCOTX>
      <CMPNAME>HANDLE_STATUS</CMPNAME>
      <SCONAME>IO_GUI_STATUS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen / dynpro fw - GUI Status</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HANDLE_STATUS</CMPNAME>
+     <SCONAME>IO_GUI_STATUS</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Screen / dynpro fw - GUI Status</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PROCESS_FCODE_2_LEAVE_DIALOG</CMPNAME>
+     <SCONAME>IV_FCODE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Function code</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>PROCESS_FCODE_2_LEAVE_DIALOG</CMPNAME>

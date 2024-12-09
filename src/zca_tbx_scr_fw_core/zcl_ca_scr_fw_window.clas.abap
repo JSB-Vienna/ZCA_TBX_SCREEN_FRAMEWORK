@@ -33,7 +33,7 @@ CLASS zcl_ca_scr_fw_window DEFINITION PUBLIC
     METHODS:
       "! <p class="shorttext synchronized" lang="en">Constructor</p>
       "!
-      "! @parameter io_screen_ctlr   | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro fw - (Sub-)Screen controller</p>
+      "! @parameter io_screen_ctlr   | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro fw - (Sub-)Screen controller</p>
       "! @parameter iv_repid         | <p class="shorttext synchronized" lang="en">Program name to current screen</p>
       "! @parameter iv_dynnr         | <p class="shorttext synchronized" lang="en">Number of (sub-)screen</p>
       "! @parameter iv_screen_name   | <p class="shorttext synchronized" lang="en">Name of (sub-)screen</p>

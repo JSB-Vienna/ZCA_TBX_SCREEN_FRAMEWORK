@@ -83,7 +83,7 @@ CLASS zcl_ca_scr_fw_ctlr DEFINITION PUBLIC
 
       "! <p class="shorttext synchronized" lang="en">Get singleton instance of screen framework controller</p>
       "!
-      "! @parameter ro_fw | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - FW controller</p>
+      "! @parameter ro_fw | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - FW controller</p>
       get_instance
         RETURNING
           VALUE(ro_fw) TYPE REF TO zcl_ca_scr_fw_ctlr.
@@ -97,7 +97,7 @@ CLASS zcl_ca_scr_fw_ctlr DEFINITION PUBLIC
       "!
       "! @parameter iv_repid | <p class="shorttext synchronized" lang="en">Program name to current screen</p>
       "! @parameter iv_dynnr | <p class="shorttext synchronized" lang="en">Number of (sub-)screen</p>
-      "! @parameter ro_view  | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter ro_view  | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       get_view
         IMPORTING
           iv_repid       TYPE syrepid
@@ -107,7 +107,7 @@ CLASS zcl_ca_scr_fw_ctlr DEFINITION PUBLIC
 
       "! <p class="shorttext synchronized" lang="en">Register view for current screen</p>
       "!
-      "! @parameter io_view | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter io_view | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       register_view
         IMPORTING
           io_view TYPE REF TO zcl_ca_scr_fw_screen,
@@ -165,7 +165,7 @@ CLASS zcl_ca_scr_fw_ctlr DEFINITION PUBLIC
 
       "! <p class="shorttext synchronized" lang="en">Unregister view from current screen</p>
       "!
-      "! @parameter io_view | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter io_view | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       unregister_view
         IMPORTING
           io_view TYPE REF TO zcl_ca_scr_fw_screen.
@@ -175,7 +175,7 @@ CLASS zcl_ca_scr_fw_ctlr DEFINITION PUBLIC
 *   s t a t i c   a t t r i b u t e s
     CLASS-DATA:
 *     o b j e c t   r e f e r e n c e s
-      "! <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - FW controller</p>
+      "! <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - FW controller</p>
       mo_fw TYPE REF TO zcl_ca_scr_fw_ctlr.
 
 *   i n s t a n c e   a t t r i b u t e s
@@ -191,7 +191,7 @@ CLASS zcl_ca_scr_fw_ctlr DEFINITION PUBLIC
       "! <p class="shorttext synchronized" lang="en">Get next screen</p>
       "!
       "! @parameter iv_repid | <p class="shorttext synchronized" lang="en">Program name to current screen</p>
-      "! @parameter ro_view  | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter ro_view  | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       get_screen
         IMPORTING
           VALUE(iv_repid) TYPE syrepid
@@ -202,7 +202,7 @@ CLASS zcl_ca_scr_fw_ctlr DEFINITION PUBLIC
     METHODS:
       "! <p class="shorttext synchronized" lang="en">Determine view type</p>
       "!
-      "! @parameter io_view | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter io_view | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       "! @parameter result  | <p class="shorttext synchronized" lang="en">View type</p>
       get_view_type
         IMPORTING

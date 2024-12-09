@@ -4,7 +4,7 @@
   <asx:values>
    <DD02V>
     <TABNAME>ZCA_S_SCR_FW_CURSOR_POS_DYNPRO</TABNAME>
-    <DDLANGUAGE>E</DDLANGUAGE>
+    <DDLANGUAGE>D</DDLANGUAGE>
     <TABCLASS>INTTAB</TABCLASS>
     <DDTEXT>CA-TBX: Detailed cursor information</DDTEXT>
     <MASTERLANG>E</MASTERLANG>
@@ -37,12 +37,12 @@
     </DD03P>
    </DD03P_TABLE>
    <I18N_LANGS>
-    <LANGU>D</LANGU>
+    <LANGU>E</LANGU>
    </I18N_LANGS>
    <DD02_TEXTS>
     <item>
-     <DDLANGUAGE>D</DDLANGUAGE>
-     <DDTEXT>Cursor Informationen</DDTEXT>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>CA-TBX: Detailed cursor information</DDTEXT>
     </item>
    </DD02_TEXTS>
   </asx:values>

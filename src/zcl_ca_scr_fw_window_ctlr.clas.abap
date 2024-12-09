@@ -9,7 +9,7 @@ CLASS zcl_ca_scr_fw_window_ctlr DEFINITION PUBLIC
 *   i n s t a n c e   a t t r i b u t e s
     DATA:
 *     o b j e c t   r e f e r e n c e s
-      "! <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - Window / Dynpro</p>
+      "! <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - Window / Dynpro</p>
       mo_window      TYPE REF TO zcl_ca_scr_fw_window READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">Publication for Generic Object Services (Manager)</p>
       mo_gos_manager TYPE REF TO cl_gos_manager READ-ONLY.
@@ -66,7 +66,7 @@ CLASS zcl_ca_scr_fw_window_ctlr DEFINITION PUBLIC
 *   i n s t a n c e   a t t r i b u t e s
     DATA:
 *     o b j e c t   r e f e r e n c e s
-      "! <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro fw - GUI Status</p>
+      "! <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro fw - GUI Status</p>
       mo_gui_status    TYPE REF TO zcl_ca_scr_fw_status,
 
 *     s t r u c t u r e s
@@ -115,6 +115,9 @@ CLASS zcl_ca_scr_fw_window_ctlr DEFINITION PUBLIC
       process_fcode_2_leave_dialog
         IMPORTING
           iv_fcode TYPE syst_ucomm,
+
+      "! <p class="shorttext synchronized" lang="en">Set flag IS_FIRST_PBO in all view to FALSE</p>
+      set_first_pbo_completed,
 
       "! <p class="shorttext synchronized" lang="en">Set GUI status</p>
       set_screen_status,
@@ -356,6 +359,7 @@ CLASS zcl_ca_scr_fw_window_ctlr IMPLEMENTATION.
               EXPORTING
                 io_gui_status = mo_gui_status.
             set_screen_status( ).
+            set_first_pbo_completed( ).
 
           WHEN mo_scr_options->event-pbo.
             handle_pbo( iv_event ).
@@ -492,6 +496,18 @@ CLASS zcl_ca_scr_fw_window_ctlr IMPLEMENTATION.
 *                                 iv_titlebar_repid = 'name_of_titlebar_program' ##no_text
 *                                 iv_titlebar_var1  = lv_key ).
   ENDMETHOD.                    "on_set_status
+
+
+  METHOD set_first_pbo_completed.
+    "-----------------------------------------------------------------*
+    "   Set flag IS_FIRST_PBO in all views to FALSE
+    "-----------------------------------------------------------------*
+    LOOP AT mo_window->mt_views INTO DATA(ls_view).
+      ls_view-o_view->set_first_pbo( abap_false ).
+    ENDLOOP.
+
+    mo_window->set_first_pbo( abap_false ).
+  ENDMETHOD.                    "set_first_pbo_completed
 
 
   METHOD set_screen_status.

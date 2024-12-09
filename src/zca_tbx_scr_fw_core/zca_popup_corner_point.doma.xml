@@ -4,13 +4,22 @@
   <asx:values>
    <DD01V>
     <DOMNAME>ZCA_POPUP_CORNER_POINT</DOMNAME>
-    <DDLANGUAGE>E</DDLANGUAGE>
+    <DDLANGUAGE>D</DDLANGUAGE>
     <DATATYPE>INT4</DATATYPE>
     <LENG>000010</LENG>
     <OUTPUTLEN>000011</OUTPUTLEN>
     <DDTEXT>CA-TBX: Corner point of a popup</DDTEXT>
     <DOMMASTER>E</DOMMASTER>
    </DD01V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD01_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>CA-TBX: Corner point of a popup</DDTEXT>
+    </item>
+   </DD01_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

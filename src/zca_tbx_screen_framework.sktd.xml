@@ -4,8 +4,8 @@
   <asx:values>
    <SKTD>
     <METADATA>
-     <DESCRIPTION>Documentation for ZCA_TBX_SCREEN_FRAMEWORK</DESCRIPTION>
-     <LANGUAGE>EN</LANGUAGE>
+     <DESCRIPTION>Dokumentation für ZCA_TBX_SCREEN_FRAMEWORK</DESCRIPTION>
+     <LANGUAGE>DE</LANGUAGE>
      <ABAP_LANGU_VERSION>0</ABAP_LANGU_VERSION>
     </METADATA>
     <REF_OBJECT>
@@ -106,7 +106,7 @@ REVUQUlMUyB8CgoKCgo=</TEXT>
         <HREF>/sap/bc/adt/repository/informationsystem/elementinfo?path=zca_tbx_screen_framework&amp;type=devc/k</HREF>
         <REL>http://www.sap.com/adt/relations/elementinfo</REL>
         <TYPE>application/vnd.sap.adt.elementinfo+xml</TYPE>
-        <TITLE>Show Element Information</TITLE>
+        <TITLE>Elementinformationen anzeigen</TITLE>
        </item>
       </LINKS>
       <SHORTTEXT_OBLIGATION>forbidden</SHORTTEXT_OBLIGATION>

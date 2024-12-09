@@ -7,36 +7,36 @@ CLASS zcl_ca_scr_fw_screen DEFINITION PUBLIC
 *   i n s t a n c e   a t t r i b u t e s
     DATA:
 *     o b j e c t   r e f e r e n c e s
-      "! <p class="shorttext synchronized" lang="en">Constants and value checks for screen /dynpro framework</p>
-      mo_scr_options                TYPE REF TO zcl_ca_c_scr_fw           READ-ONLY,
+      "! <p class="shorttext synchronized" lang="en">CA-TBX: Constants and value checks for screen framework</p>
+      mo_scr_options  TYPE REF TO zcl_ca_c_scr_fw           READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">Parent screen/view of this view</p>
-      mo_parent                     TYPE REF TO zcl_ca_scr_fw_screen      READ-ONLY,
-      "! <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro fw - (Sub-)Screen controller</p>
-      mo_screen_ctlr                TYPE REF TO zcl_ca_scr_fw_screen_ctlr READ-ONLY,
+      mo_parent       TYPE REF TO zcl_ca_scr_fw_screen      READ-ONLY,
+      "! <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro fw - (Sub-)Screen controller</p>
+      mo_screen_ctlr  TYPE REF TO zcl_ca_scr_fw_screen_ctlr READ-ONLY,
 
 *     s t r u c t u r e s
       "! <p class="shorttext synchronized" lang="en">CA-TBX: Detailed cursor information</p>
-      ms_cursor                     TYPE zca_s_scr_fw_cursor_pos_dynpro READ-ONLY,
+      ms_cursor       TYPE zca_s_scr_fw_cursor_pos_dynpro READ-ONLY,
 
 *     s i n g l e   v a l u e s
       "! <p class="shorttext synchronized" lang="en">View type (use const C_VIEW_TYPE_*)</p>
-      mv_view_type                  TYPE char1             READ-ONLY,
+      mv_view_type    TYPE char1             READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">X = Screen is active</p>
-      mv_active                     TYPE abap_bool         READ-ONLY,
+      mv_active       TYPE abap_bool         READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">Current mode: Display or modify</p>
-      mv_mode                       TYPE syst_ucomm        READ-ONLY,
+      mv_mode         TYPE syst_ucomm        READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">X = First PBO is already performed</p>
-      mv_is_first_pbo               TYPE abap_boolean     READ-ONLY,
+      mv_is_first_pbo TYPE abap_boolean      READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">Name of (sub-)screen</p>
-      mv_screen_name                TYPE zca_d_screen_name READ-ONLY,
+      mv_screen_name  TYPE zca_d_screen_name READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">Name of dialog (main screen incl. composites and subscreens)</p>
-      mv_dialog_name                TYPE zca_d_dialog_name READ-ONLY,
+      mv_dialog_name  TYPE zca_d_dialog_name READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">Program name to current screen number</p>
-      mv_repid                      TYPE syrepid           READ-ONLY,
+      mv_repid        TYPE syrepid           READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">Current screen number</p>
-      mv_dynnr                      TYPE syst_dynnr        READ-ONLY,
+      mv_dynnr        TYPE syst_dynnr        READ-ONLY,
       "! <p class="shorttext synchronized" lang="en">Actual function code</p>
-      mv_fcode                      TYPE syst_ucomm        READ-ONLY.
+      mv_fcode        TYPE syst_ucomm        READ-ONLY.
 
 *   i n s t a n c e   m e t h o d s
     METHODS:
@@ -45,7 +45,7 @@ CLASS zcl_ca_scr_fw_screen DEFINITION PUBLIC
 
       "! <p class="shorttext synchronized" lang="en">Constructor</p>
       "!
-      "! @parameter io_screen_ctlr | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro fw - (Sub-)Screen controller</p>
+      "! @parameter io_screen_ctlr | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro fw - (Sub-)Screen controller</p>
       "! @parameter iv_repid       | <p class="shorttext synchronized" lang="en">Program name to current screen</p>
       "! @parameter iv_dynnr       | <p class="shorttext synchronized" lang="en">Number of (sub-)screen</p>
       "! @parameter iv_screen_name | <p class="shorttext synchronized" lang="en">Name of (sub-)screen</p>

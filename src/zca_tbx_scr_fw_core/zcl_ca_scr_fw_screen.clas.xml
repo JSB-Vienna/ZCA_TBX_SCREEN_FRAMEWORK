@@ -4,7 +4,7 @@
   <asx:values>
    <VSEOCLASS>
     <CLSNAME>ZCL_CA_SCR_FW_SCREEN</CLSNAME>
-    <LANGU>E</LANGU>
+    <LANGU>D</LANGU>
     <DESCRIPT>CA-TBX: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
@@ -12,11 +12,27 @@
     <UNICODE>X</UNICODE>
     <RSTAT>S</RSTAT>
    </VSEOCLASS>
+   <DESCRIPTIONS_CLASS>
+    <SEOCLASSTX>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CA-TBX: Screen / dynpro framework - (Sub-)Screen</DESCRIPT>
+    </SEOCLASSTX>
+   </DESCRIPTIONS_CLASS>
    <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CLOSE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Close (sub-)screen</DESCRIPT>
+    </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>CLOSE</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Close (sub-)screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CLOSED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen is closing</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>CLOSED</CMPNAME>
@@ -25,8 +41,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_PARENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Parent screen/view of this view</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MO_PARENT</CMPNAME>
@@ -35,13 +61,28 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MO_SCREEN_CTLR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CA-TBX: Screen / dynpro fw - (Sub-)Screen controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_SCREEN_CTLR</CMPNAME>
      <LANGU>E</LANGU>
-     <DESCRIPT>Common object: Screen / dynpro fw - (Sub-)Screen controller</DESCRIPT>
+     <DESCRIPT>CA-TBX: Screen / dynpro fw - (Sub-)Screen controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_SCR_OPTIONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CA-TBX: Constants and value checks for screen framework</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MO_SCR_OPTIONS</CMPNAME>
      <LANGU>E</LANGU>
-     <DESCRIPT>Constants and value checks for screen /dynpro framework</DESCRIPT>
+     <DESCRIPT>CA-TBX: Constants and value checks for screen framework</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MS_CURSOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CA-TBX: Detailed cursor information</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MS_CURSOR</CMPNAME>
@@ -50,8 +91,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>X = Screen is active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_ACTIVE</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>X = Screen is active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_DIALOG_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name of dialog (main screen incl. composites and subscreens)</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_DIALOG_NAME</CMPNAME>
@@ -60,8 +111,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_DYNNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Current screen number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_DYNNR</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Current screen number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_FCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Actual function code</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_FCODE</CMPNAME>
@@ -70,8 +131,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_IS_FIRST_PBO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>X = First PBO is already performed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_IS_FIRST_PBO</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>X = First PBO is already performed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Current mode: Display or modify</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_MODE</CMPNAME>
@@ -80,8 +151,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_REPID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Program name to current screen number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_REPID</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Program name to current screen number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_SCREEN_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name of (sub-)screen</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_SCREEN_NAME</CMPNAME>
@@ -90,8 +171,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>MV_VIEW_TYPE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>View type (use const C_VIEW_TYPE_*)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_VIEW_TYPE</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>View type (use const C_VIEW_TYPE_*)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ON_EVENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Handle screen event</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>ON_EVENT</CMPNAME>
@@ -100,8 +191,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>PROCESS_EVENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Trigger screen event</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PROCESS_EVENT</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Trigger screen event</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PROCESS_FCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Trigger function code</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>PROCESS_FCODE</CMPNAME>
@@ -110,8 +211,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>REFRESH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Trigger function code REFRESH</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REFRESH</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Trigger function code REFRESH</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REGISTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Register screen in framework</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>REGISTER</CMPNAME>
@@ -120,8 +231,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set screen (in-)active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_ACTIVE</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Set screen (in-)active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_CURSOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set cursor information</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_CURSOR</CMPNAME>
@@ -130,8 +251,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_DIALOG_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set dialog name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_DIALOG_NAME</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Set dialog name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_DYNNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set screen number to replace a screen</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_DYNNR</CMPNAME>
@@ -140,8 +271,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_FCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set function code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_FCODE</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Set function code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_FIRST_PBO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set flag for first PBO</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_FIRST_PBO</CMPNAME>
@@ -150,8 +291,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set screen mode / change between display and modify</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_MODE</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Set screen mode / change between display and modify</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_PARENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set parent screen instance</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_PARENT</CMPNAME>
@@ -160,8 +311,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set screen properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_PROPERTIES</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Set screen properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_REPID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set program name for current screen</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_REPID</CMPNAME>
@@ -170,8 +331,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_SCREEN_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set screen name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_SCREEN_NAME</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Set screen name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_VIEW_TYPE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set view type</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CMPNAME>SET_VIEW_TYPE</CMPNAME>
@@ -183,8 +354,20 @@
     <SEOSUBCOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
      <SCONAME>IO_SCREEN_CTLR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CA-TBX: Screen / dynpro fw - (Sub-)Screen controller</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IO_SCREEN_CTLR</SCONAME>
      <LANGU>E</LANGU>
-     <DESCRIPT>Common object: Screen / dynpro fw - (Sub-)Screen controller</DESCRIPT>
+     <DESCRIPT>CA-TBX: Screen / dynpro fw - (Sub-)Screen controller</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_DYNNR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Number of (sub-)screen</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
@@ -195,8 +378,20 @@
     <SEOSUBCOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
      <SCONAME>IV_REPID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_SCREEN_NAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name of (sub-)screen</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>CONSTRUCTOR</CMPNAME>
@@ -207,7 +402,19 @@
     <SEOSUBCOTX>
      <CMPNAME>ON_EVENT</CMPNAME>
      <SCONAME>IV_EVENT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen event</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ON_EVENT</CMPNAME>
+     <SCONAME>IV_EVENT</SCONAME>
      <LANGU>E</LANGU>
+     <DESCRIPT>Screen event</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PROCESS_EVENT</CMPNAME>
+     <SCONAME>IV_EVENT</SCONAME>
+     <LANGU>D</LANGU>
      <DESCRIPT>Screen event</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
@@ -219,8 +426,20 @@
     <SEOSUBCOTX>
      <CMPNAME>PROCESS_FCODE</CMPNAME>
      <SCONAME>IV_FCODE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Function code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PROCESS_FCODE</CMPNAME>
+     <SCONAME>IV_FCODE</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Function code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_ACTIVE</CMPNAME>
+     <SCONAME>IV_ACTIVE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>X = Activate screen</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>SET_ACTIVE</CMPNAME>
@@ -231,8 +450,20 @@
     <SEOSUBCOTX>
      <CMPNAME>SET_CURSOR</CMPNAME>
      <SCONAME>IS_CURSOR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Detailed cursor information</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_CURSOR</CMPNAME>
+     <SCONAME>IS_CURSOR</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Detailed cursor information</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_DIALOG_NAME</CMPNAME>
+     <SCONAME>IV_DIALOG_NAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dialog name (e. g. helpful for screen control)</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>SET_DIALOG_NAME</CMPNAME>
@@ -243,13 +474,31 @@
     <SEOSUBCOTX>
      <CMPNAME>SET_DYNNR</CMPNAME>
      <SCONAME>IV_DYNNR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Number of (sub-)screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_DYNNR</CMPNAME>
+     <SCONAME>IV_DYNNR</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Number of (sub-)screen</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>SET_FCODE</CMPNAME>
      <SCONAME>IV_FCODE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Function code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_FCODE</CMPNAME>
+     <SCONAME>IV_FCODE</SCONAME>
      <LANGU>E</LANGU>
+     <DESCRIPT>Function code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_FIRST_PBO</CMPNAME>
+     <SCONAME>IV_FIRST_PBO</SCONAME>
+     <LANGU>D</LANGU>
      <DESCRIPT>Function code</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
@@ -261,8 +510,20 @@
     <SEOSUBCOTX>
      <CMPNAME>SET_MODE</CMPNAME>
      <SCONAME>IV_MODE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen mode (use C_MODE_*)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_MODE</CMPNAME>
+     <SCONAME>IV_MODE</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Screen mode (use C_MODE_*)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_PARENT</CMPNAME>
+     <SCONAME>IO_PARENT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Parent screen instance</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>SET_PARENT</CMPNAME>
@@ -273,8 +534,20 @@
     <SEOSUBCOTX>
      <CMPNAME>SET_PROPERTIES</CMPNAME>
      <SCONAME>IV_DYNNR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Number of (sub-)screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_PROPERTIES</CMPNAME>
+     <SCONAME>IV_DYNNR</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Number of (sub-)screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_PROPERTIES</CMPNAME>
+     <SCONAME>IV_MODE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen mode (use C_MODE_*)</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>SET_PROPERTIES</CMPNAME>
@@ -285,8 +558,20 @@
     <SEOSUBCOTX>
      <CMPNAME>SET_PROPERTIES</CMPNAME>
      <SCONAME>IV_REPID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_PROPERTIES</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_PROPERTIES</CMPNAME>
+     <SCONAME>IV_SCREEN_NAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen name</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>SET_PROPERTIES</CMPNAME>
@@ -297,14 +582,32 @@
     <SEOSUBCOTX>
      <CMPNAME>SET_REPID</CMPNAME>
      <SCONAME>IV_REPID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Program name to current screen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_REPID</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Program name to current screen</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>SET_SCREEN_NAME</CMPNAME>
      <SCONAME>IV_SCR_NAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screen name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_SCREEN_NAME</CMPNAME>
+     <SCONAME>IV_SCR_NAME</SCONAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Screen name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_VIEW_TYPE</CMPNAME>
+     <SCONAME>IV_VIEW_TYPE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>View type</DESCRIPT>
     </SEOSUBCOTX>
     <SEOSUBCOTX>
      <CMPNAME>SET_VIEW_TYPE</CMPNAME>

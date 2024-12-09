@@ -16,7 +16,7 @@ CLASS zcl_ca_scr_fw_composite DEFINITION PUBLIC
       "! <p class="shorttext synchronized" lang="en">Add view to screen</p>
       "!
       "! @parameter iv_index | <p class="shorttext synchronized" lang="en">Index of screen</p>
-      "! @parameter io_view  | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter io_view  | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       add_view
         IMPORTING
           iv_index TYPE syst_index OPTIONAL
@@ -27,7 +27,7 @@ CLASS zcl_ca_scr_fw_composite DEFINITION PUBLIC
 
       "! <p class="shorttext synchronized" lang="en">Constructor</p>
       "!
-      "! @parameter io_screen_ctlr | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro fw - (Sub-)Screen controller</p>
+      "! @parameter io_screen_ctlr | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro fw - (Sub-)Screen controller</p>
       "! @parameter iv_repid       | <p class="shorttext synchronized" lang="en">Program name to current screen</p>
       "! @parameter iv_dynnr       | <p class="shorttext synchronized" lang="en">Number of (sub-)screen</p>
       "! @parameter iv_screen_name | <p class="shorttext synchronized" lang="en">Name of (sub-)screen</p>
@@ -40,14 +40,14 @@ CLASS zcl_ca_scr_fw_composite DEFINITION PUBLIC
 
       "! <p class="shorttext synchronized" lang="en">Get current view</p>
       "!
-      "! @parameter result | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter result | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       get_current_view
         RETURNING
           VALUE(result) TYPE REF TO zcl_ca_scr_fw_screen,
 
       "! <p class="shorttext synchronized" lang="en">Get next view</p>
       "!
-      "! @parameter result | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter result | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       get_next_view
         RETURNING
           VALUE(result) TYPE REF TO zcl_ca_scr_fw_screen,
@@ -55,7 +55,7 @@ CLASS zcl_ca_scr_fw_composite DEFINITION PUBLIC
       "! <p class="shorttext synchronized" lang="en">Get view by index</p>
       "!
       "! @parameter iv_index | <p class="shorttext synchronized" lang="en">Index of screen</p>
-      "! @parameter result   | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter result   | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       get_view_by_index
         IMPORTING
           iv_index      TYPE syst_index
@@ -71,7 +71,7 @@ CLASS zcl_ca_scr_fw_composite DEFINITION PUBLIC
 
       "! <p class="shorttext synchronized" lang="en">Remove view from screen</p>
       "!
-      "! @parameter io_view | <p class="shorttext synchronized" lang="en">Common object: Screen / dynpro framework - (Sub-)Screen</p>
+      "! @parameter io_view | <p class="shorttext synchronized" lang="en">CA-TBX: Screen / dynpro framework - (Sub-)Screen</p>
       remove_view
         IMPORTING
           io_view TYPE REF TO zcl_ca_scr_fw_screen,
@@ -273,7 +273,6 @@ CLASS zcl_ca_scr_fw_composite IMPLEMENTATION.
     LOOP AT mt_views REFERENCE INTO DATA(lr_view).
       lr_view->on_display = abap_false.
       lr_view->o_view->on_event( mo_scr_options->event-fcode ).
-      lr_view->o_view->set_first_pbo( abap_false ).
     ENDLOOP.
   ENDMETHOD.                    "on_fcode
 
