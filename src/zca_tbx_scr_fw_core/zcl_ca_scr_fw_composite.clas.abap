@@ -95,9 +95,9 @@ CLASS zcl_ca_scr_fw_composite DEFINITION PUBLIC
 
 *     s i n g l e   v a l u e s
       "! <p class="shorttext synchronized" lang="en">Number of subscreens</p>
-      mv_subviews      TYPE syst_index,
+      mv_subviews                   TYPE syst_index,
       "! <p class="shorttext synchronized" lang="en">Index of last subscreen</p>
-      mv_subview_index TYPE syst_index.
+      mv_subview_index              TYPE syst_index.
 
 
 *   i n s t a n c e   m e t h o d s
@@ -241,10 +241,8 @@ CLASS zcl_ca_scr_fw_composite IMPLEMENTATION.
     "-----------------------------------------------------------------*
     "   Is a value check required for specific function codes
     "-----------------------------------------------------------------*
-    rv_no_value_check = abap_false.
-    IF zcl_ca_scr_fw_ctlr=>get_instance( )->mv_fcode IN mra_excl_func_for_value_check.
-      rv_no_value_check = abap_true.
-    ENDIF.
+    rv_no_value_check = xsdbool( mra_excl_func_for_value_check IS NOT INITIAL AND
+                                 zcl_ca_scr_fw_ctlr=>get_instance( )->mv_fcode IN mra_excl_func_for_value_check ).
   ENDMETHOD.                    "no_value_check_is_required
 
 

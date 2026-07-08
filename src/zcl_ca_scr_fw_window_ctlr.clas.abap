@@ -214,6 +214,7 @@ CLASS zcl_ca_scr_fw_window_ctlr IMPLEMENTATION.
                                             is_popup_corners = ms_popup_corners ).
 
       mo_screen->set_dialog_name( mv_dialog_name ).
+      mo_screen->set_mode( mv_mode ).
     ENDIF.
 
     "Cast into WINDOW type to be able to add the following subscreens

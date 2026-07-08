@@ -336,6 +336,15 @@ CLASS zcl_ca_scr_fw_screen_ctlr IMPLEMENTATION.
             ELSEIF eo_object IS SUPPLIED.
               eo_object ?= <lv_data>.
             ENDIF.
+
+          WHEN OTHERS.
+            "Parameter '&1' has invalid value '&2'
+            RAISE EXCEPTION TYPE zcx_ca_intern
+              EXPORTING
+                textid   = zcx_ca_intern=>param_invalid
+                mv_msgty = zcx_ca_intern=>c_msgty_e
+                mv_msgv1 = 'IV_EVENT'
+                mv_msgv2 = CONV #( iv_event ) ##no_text.
         ENDCASE.
 
       CATCH cx_root INTO DATA(lx_error) ##catch_all.
